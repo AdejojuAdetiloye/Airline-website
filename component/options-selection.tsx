@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const OptionsSelection = () => {
   return (
-    <div className="relative flex justify-center items-center -mt-5 mb-4 bg-white border border-b-cyan p-7">
+    <div className="relative flex flex-col items-start sm:flex-row justify-center sm:items-center -mt-5 mb-4 bg-white  p-7">
           
             <div className="max-w-[220px] p-2 border border-t-white border-cyan-100 box-border mx-2">
               <div className="font-semibold">From</div>

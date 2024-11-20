@@ -8,41 +8,51 @@ import TourPackage from "@/component/tour-package";
 import TopAirlines from "@/component/top-airlines";
 import Slider from "@/component/slider";
 import CardsSection from "@/component/cards-section";
+import PopularDestinations from "@/component/popular-destinations";
 
 export default function Home() {
   return (
-    <div>
+    <div className=" w-full sm:w-sm mx-auto justify-center items-center">
       {/* Main Container with padding for responsive spacing */}
-      <div className="flex flex-col items-center justify-center min-h-[calc(10vh-4rem)] w-full bg-white mt-12 mb-12 px-4 lg:px-0">
-        <div className="max-w-[1220px] w-full relative">
+      
+        <div>
+
           {/* Image Container */}
-          <RectangleImage />
+          <div className=" relative w-full h-[223px] md:w-[1440px] md:h-[702px] mt-4  mx-auto">
+              <RectangleImage />
+          </div>
 
-          {/* Overlay Buttons */}
-          <OverlayButtons />
+          <div className=" relative top-[-58px] md:top-[-200px] sm:top-[-200px] w-[300px] h-[600px]  items-center justify-center shadow-lg lg:w-[1197px] lg:h-[402px] mx-auto ">
+            
+            {/* Overlay Buttons */}
+            <OverlayButtons />
 
-          {/* Radio Buttons Section */}
-          <RadioSelect />
+            {/* Radio Buttons Section */}
+            <RadioSelect />
 
-          {/* Input Fields Section */}
-          <OptionsSelection />
+            {/* Input Fields Section */}
+             <OptionsSelection />
 
-          {/* Search Button Section */}
-          <SearchButton />
+            {/* Search Button Section */}
+             <SearchButton />
+          </div>
 
-          {/* Tour Package Header */}
-          <TourPackage />
         </div>
-      </div>
+      
 
       {/* Slider Section */}
-      <div className="w-full">
+      <div className="w-full -mt-20">
         <Slider />
       </div>
 
       {/* Top Airlines Section */}
       <div className="w-full">
         <TopAirlines />
+      </div>
+
+      {/* Popular Destination Section */}
+      <div className="w-full">
+        <PopularDestinations />
       </div>
 
       {/* Cards Section */}

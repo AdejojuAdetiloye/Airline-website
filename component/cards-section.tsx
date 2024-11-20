@@ -14,13 +14,13 @@ const CardsSection = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg text-center"
+            className="bg-white p-6 rounded-lg shadow-lg w-[334px] h-[401px] mx-auto sm:w-[372px] sm:h-[401px] cursor-pointer text-center"
           >
             {/* Logo */}
             <img
               src={card.logo}
               alt={card.header}
-              className="w-24 h-auto mb-4 mx-auto"
+              className="sm:w-[103px] sm:h-[103px] mb-4 mx-auto"
             />
 
             {/* Header */}
@@ -39,5 +39,5 @@ const CardsSection = () => {
     </div>
   );
 };
-
+24
 export default CardsSection;

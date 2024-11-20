@@ -5,10 +5,10 @@ const TopAirlines = () => {
   
 
   return (
-    <div className="bg-gray-100 py-20 mt-12 mb-12 px-2">
+    <div className="bg-gray-100 w-full mx-auto py-20 mt-12 mb-12 px-5">
       {/* Header Section */}
-      <h1 className="text-center text-2xl font-bold mb-5 mt-10">Search Top Airlines</h1>
-      <p className="text-center text-lg mb-20 text-wrap p-2">
+      <h1 className="text-center w-full text-2xl sm:text-4xl font-bold mb-5 mt-10">Search Top Airlines</h1>
+      <p className="text-center w-[300px] mx-auto sm:text-lg mb-20 text-wrap p-2">
         Experience the grandeur of air travel with AirlineSearch, catering to your needs on a grand scale.
       </p>
 
@@ -24,7 +24,7 @@ const TopAirlines = () => {
               <img
                 src={airline.logo}
                 alt={airline.name}
-                className="w-24 h-auto mx-auto"
+                className="w-24 items-start"
               />
             </div>
 
